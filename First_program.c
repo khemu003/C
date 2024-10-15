@@ -1,4 +1,4 @@
--> print "Hello world"
+// print "Hello world"
 
 #include<stdio.h>
 int main(){
@@ -6,7 +6,7 @@ int main(){
     return 0;
 }
 
-
+/*
 #include<stdio.h> :header file  | root file | library file
     # :hash :preprocessor (store predefine functions ) 
     include : keywords
@@ -17,3 +17,4 @@ int main()
     main() :predefine function 
         ->used to execute (run) the code 
         ->it is a entry point
+*/
