@@ -1,0 +1,47 @@
+/*
+operator :
+    ->it is used to operate the value of variable 
+    ->it is used to perform some specific task 
+    ->it is used to perform some operation 
+
+types :
+a)arithmetic operator 
+b)ternary operator 
+c)relational operator 
+d)assignment operator 
+e)logical operator 
+--------------------------------------------------------
+
+a)arithmetic operator 
+->it is a set of symbols 
+->it is the type of operator 
+->it is used to perform arithmetic operations(mathematical terms)
+symbol :
++ :addition 
+- :substraction 
+* :multiplication 
+/ :divide 
+% :modular 
+
+---------------------------------------------------------
+2)relational operator :
+->it is the type of operator 
+->set of symbols 
+->it is used to make the conditions 
+symbol :
+< :less than 
+> :greater than 
+<= :less than equal to 
+>= :greater than equal to 
+== :equal equal to 
+!= :not equal to 
+
+---------------------------------------------------------
+3)assignment operator :
+->set of symbols 
+->type of operator 
+->it is used to assign the value of the variable 
+symbol :
+= : equal to
+include :+= , -= , *=, /=, %= 
+*/
