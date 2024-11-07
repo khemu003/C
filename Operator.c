@@ -10,7 +10,7 @@ b)ternary operator
 c)relational operator 
 d)assignment operator 
 e)logical operator 
---------------------------------------------------------
+=====================================================================================
 
 a)arithmetic operator 
 ->it is a set of symbols 
