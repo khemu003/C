@@ -44,4 +44,22 @@ symbol :
 symbol :
 = : equal to
 include :+= , -= , *=, /=, %= 
+
+---------------------------------------------------------
+4)logical operator :
+->set of symbols 
+->type of operator 
+->it is used to determine the logic between variables or values, by combining multiple conditions: 
+symbol :
+&& : AND
+|| :OR
+! : NOT
+
+---------------------------------------------------------
+5)Ternary Operator :
+->We use the ternary operator in C to run one code when the condition is true and another code when the condition is false 
+syntax : 
+testCondition ? expression1 : expression 2;
+
+---------------------------------------------------------
 */
