@@ -22,7 +22,19 @@ symbol :
 * :multiplication 
 / :divide 
 % :modular 
-
+*/
+#include <stdio.h>
+int main() {
+  int x = 5;
+  int y = 3;
+  printf("Add : %d\n", x + y);
+  printf("Sub : %d\n", x - y);
+  printf("Multi : %d\n", x * y);
+  printf("Divi : %d\n", x / y);
+  printf("Mod : %d\n", x % y);
+  return 0;
+}
+/*
 ---------------------------------------------------------
 2)relational operator :
 ->it is the type of operator 
@@ -35,7 +47,9 @@ symbol :
 >= :greater than equal to 
 == :equal equal to 
 != :not equal to 
+*/
 
+/*
 ---------------------------------------------------------
 3)assignment operator :
 ->set of symbols 
