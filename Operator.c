@@ -69,7 +69,14 @@ int main() {
 symbol :
 = : equal to
 include :+= , -= , *=, /=, %= 
-
+*/
+#include <stdio.h>
+int main() {
+  int x = 5;
+  printf("%d", x);
+  return 0;
+}
+/*
 ---------------------------------------------------------
 4)logical operator :
 ->set of symbols 
@@ -79,12 +86,32 @@ symbol :
 && : AND
 || :OR
 ! : NOT
-
+*/
+#include <stdio.h>
+int main() {
+  int x = 5;
+  int y = 3;
+  // Returns 1 (true) because 5 is greater than 3 AND 5 is less than 10
+  printf("%d\n", x > 3 && x < 10);
+  // Returns 1 (true) because one of the conditions are true (5 is greater than 3, but 5 is not less than 4)
+  printf("%d", x > 3 || x < 4);
+  // Returns false (0) because ! (not) is used to reverse the result
+  printf("%d", !(x > 3 && x < 10));
+  return 0;
+}
+/*
 ---------------------------------------------------------
 5)Ternary Operator :
 ->We use the ternary operator in C to run one code when the condition is true and another code when the condition is false 
 syntax : 
 testCondition ? expression1 : expression 2;
-
----------------------------------------------------------
 */
+#include <stdio.h>
+int main() {
+  int age;
+  printf("Enter your age: ");
+  scanf("%d", &age);
+  // ternary operator to find if a person can vote or not
+  (age >= 18) ? printf("You can vote") : printf("You cannot vote");
+  return 0;
+}
