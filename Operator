@@ -1,4 +1,3 @@
-/*
 operator :
     ->it is used to operate the value of variable 
     ->it is used to perform some specific task 
@@ -22,7 +21,8 @@ symbol :
 * :multiplication 
 / :divide 
 % :modular 
-*/
+
+Example : 
 #include <stdio.h>
 int main() {
   int x = 5;
@@ -34,8 +34,8 @@ int main() {
   printf("Mod : %d\n", x % y);
   return 0;
 }
-/*
 ---------------------------------------------------------
+
 2)relational operator :
 ->it is the type of operator 
 ->set of symbols 
@@ -47,7 +47,8 @@ symbol :
 >= :greater than equal to 
 == :equal equal to 
 != :not equal to 
-*/
+
+Example : 
 #include <stdio.h>
 int main() {
   int x = 5;
@@ -60,8 +61,8 @@ int main() {
   printf("%d\n", x == y); // returns 1 (true) because 5 is equal to 5
   return 0;
 }
-/*
 ---------------------------------------------------------
+
 3)assignment operator :
 ->set of symbols 
 ->type of operator 
@@ -69,15 +70,16 @@ int main() {
 symbol :
 = : equal to
 include :+= , -= , *=, /=, %= 
-*/
+
+Example : 
 #include <stdio.h>
 int main() {
   int x = 5;
   printf("%d", x);
   return 0;
 }
-/*
 ---------------------------------------------------------
+
 4)logical operator :
 ->set of symbols 
 ->type of operator 
@@ -86,7 +88,8 @@ symbol :
 && : AND
 || :OR
 ! : NOT
-*/
+
+Example : 
 #include <stdio.h>
 int main() {
   int x = 5;
@@ -99,13 +102,14 @@ int main() {
   printf("%d", !(x > 3 && x < 10));
   return 0;
 }
-/*
 ---------------------------------------------------------
+
 5)Ternary Operator :
 ->We use the ternary operator in C to run one code when the condition is true and another code when the condition is false 
 syntax : 
 testCondition ? expression1 : expression 2;
-*/
+
+Example : 
 #include <stdio.h>
 int main() {
   int age;
