@@ -1,0 +1,67 @@
+-> print 67
+
+#include<stdio.h>
+int main(){
+    int a = 67;
+    printf("%d", a);
+    return 0;
+}
+
+-> print 9.86
+
+#include<stdio.h>
+int main(){
+    float a = 9.86;
+    printf("%f", a);
+    return 0;
+}
+
+-> print -353.54
+
+#include<stdio.h>
+int main(){
+    flaot a = -353.54;
+    printf("%f", a);
+    return 0;
+}
+
+-> print 'n'
+
+#include<stdio.h>
+int main(){
+    char a = 'n';
+    printf("%c", a);
+    return 0;
+}
+
+-> print -23
+
+#include<stdio.h>
+int main(){
+    int a = -23;
+    printf("%d", a);
+    return 0;
+}
+
+-> what is data type ?
+	->data type use to store the variable which type of value stored in variable.
+
+-> what is variable ?
+	->variable is like container that is used to stored and hold the value(data)
+	->it provide memory.
+
+-> types of data type ? 
+	->there are two type
+		->A) primitive data type
+			->like int, float, char etc.
+		->B) non-primitive data type
+			->like string, array, pointer, etc.
+
+-> what is compiler ?
+	->compiler are use to convert source code to machine code
+	->It is convert our main.c file to main.obj and than main.exe for execute the program
+ 
+-> what is machine code ?
+	-> machine code is a code that understand by only computer
+	-> because computer only understand Binary number (0 & 1)
+	-> In programming language machine code use .obj extension to convert source code to machine code
