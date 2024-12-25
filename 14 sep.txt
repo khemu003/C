@@ -1,0 +1,190 @@
+-> perform 45+67 
+
+#include <stdio.h>
+int main() {
+    int a = 45;
+    int b = 67;
+    int result = a+b;
+    printf("%d",result);
+    return 0;
+}
+//output : 112
+
+-> perform 23-2
+
+#include <stdio.h>
+int main() {
+    int a = 23;
+    int b = 2;
+    int result = a-b;
+    printf("%d",result);
+    return 0;
+}
+//output : 21
+
+-> perform 34*5
+
+#include <stdio.h>
+int main() {
+    int a = 34;
+    int b = 5;
+    int result = a*b;
+    printf("%d",result);
+    return 0;
+}
+//output : 170
+
+-> perform 22/2
+
+#include <stdio.h>
+int main() {
+    int a = 22;
+    int b = 2;
+    int result = a/b;
+    printf("%d",result);
+    return 0;
+}
+//output : 11
+
+-> perform 34+67+23+12+6
+
+#include <stdio.h>
+int main() {
+    int a = 34;
+    int b = 67;
+    int c = 23;
+    int d = 12;
+    int e = 6;
+    int result = a+b+c+d+e;
+    printf("%d",result);
+    return 0;
+}
+//output :142
+
+-> perform 23+89+12+56
+
+#include <stdio.h>
+int main() {
+    int a = 23;
+    int b = 89;
+    int c = 12;
+    int d = 56;
+    int result = a+b+c+d;
+    printf("%d",result);
+    return 0;
+}
+//output : 180
+
+-> perform 56*34+12/2-13
+
+#include <stdio.h>
+int main() {
+    int a = 56;
+    int b = 34;
+    int c = 12;
+    int d = 2;
+    int e = 13;
+    float result = a*b+c/d-e;
+    printf("%f",result);
+    return 0;
+}
+//output : 1897.000000
+
+-> perform 1.2*6.7-4.5/2 
+
+#include <stdio.h>
+int main() {
+    float a = 1.2;
+    float b = 6.7;
+    float c = 4.5;
+    int d = 2;
+    float result = a*b-c/d;
+    printf("%f",result);
+    return 0;
+}
+//output : 5.790000
+
+-> perform 1.6*(12-2)/2+7.8-1.5 
+
+#include <stdio.h>
+int main() {
+    float a = 1.6;
+    int b =12;
+    int c = 2;
+    int d = 2;
+    float e = 7.8;
+    float f = 1.5;
+    float result = a*(b-c)/d+e-f;
+    printf("%f",result);
+    return 0;
+}
+//output : 14.300000
+
+
+-> perform 4.5*1.2-(82/2)-5.6 +1.234
+
+#include <stdio.h>
+int main() {
+    float a = 4.5;
+    float b =1.2;
+    int c = 82;
+    int d = 2;
+    float e = 5.6;
+    float f = 1.234;
+    float result = a*b-(c/d)-e+f;
+    printf("%f",result);
+    return 0;
+}
+//output : -39.965996
+
+
+-> perform 8*1+(4-2)/1+6
+
+#include <stdio.h>
+int main() {
+    int a = 8;
+    int b =1;
+    int c = 4;
+    int d = 2;
+    int e = 1;
+    int f = 6;
+    float result = a*b+(c-d)/e+f;
+    printf("%f",result);
+    return 0;
+}
+//output : 16.000000
+
+
+-> perform 3.4+1.2*(3.7-1.2)/2+6.8 
+
+#include <stdio.h>
+int main() {
+    float a = 3.4;
+    float b =1.2;
+    float c = 3.7;
+    float d = 1.2;
+    int e = 2;
+    float f = 6.8;
+    float result = a+b*(c-d)/e+f;
+    printf("%f",result);
+    return 0;
+}
+//output : 11.700001
+
+
+->perform 8.9*1.67-(6.21-5.6)+7.8-34 +157
+
+#include <stdio.h>
+int main() {
+    float a = 8.9;
+    float b =1.67;
+    float c = 6.21;
+    float d = 5.6;
+    float e = 7.8;
+    int f = 34;
+    int  g = 157;
+    float result = a*b-(c-d)+e-f+g;
+    printf("%f",result);
+    return 0;
+}
+//output : 145.052994
