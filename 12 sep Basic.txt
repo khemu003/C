@@ -1,0 +1,84 @@
+-> print "Hello world"
+
+#include<stdio.h>
+int main(){
+    printf("Hello world");
+    return 0;
+}
+
+-> print "welcome to India"
+
+#include<stdio.h>
+int main(){
+    printf("welcome to India");
+    return 0;
+}
+
+-> print five friend name
+
+#include<stdio.h>
+int main(){
+    printf("Aditya");
+    printf("Susheel");
+    printf("Ashish");
+    printf("Sunil");
+    printf("Pramod");
+    return 0;
+}
+
+-> print five country name
+
+#include<stdio.h>
+int main(){
+    printf("India");
+    printf("America");
+    printf("China");
+    printf("Japan");
+    printf("Bangladesh");
+    return 0;
+}
+
+-> print five city name
+
+#include<stdio.h>
+int main(){
+    printf("Jaipur");
+    printf("Kota");
+    printf("Ajmer");
+    printf("Udaipur");
+    printf("Jodhpur");
+    return 0;
+}
+
+
+
+-> what is c ?
+	-> c is a programming language.
+	-> It is mother language.
+	-> It is middle-level language.
+	-> It is structural programming language.
+	-> It is procedural programming language.
+
+-> what is structural programming language ?
+	-> It means that it have a particular structure and fixed structure to make a code
+	-> like in c, first we write header file than main function.
+
+-> what is procedural programming language ?
+	-> It follow the process or it execute code step by step
+	-> like making tea
+		-> first we boil the water
+		-> than add milk
+		-> than sugar and tea power
+
+-> what is platform depend ?
+	-> It means, we write a code in one device to another device but code is not easy to run on another device.
+	-> like some apk files
+
+-> what is the features of c ?
+	-> simple
+	-> structure programming language
+	-> procedural programming language
+	-> middle-level
+	-> Rich-library
+	-> Built-in -function
+	-> pointers
