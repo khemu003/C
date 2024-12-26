@@ -1,0 +1,152 @@
+-> perform
+int i = 0;
+i = i++ - --i + ++i - i--;
+printf("%d\n", i);
+
+#include <stdio.h>
+int main() {
+    int i = 0;
+    i = i++ - --i + ++i - i--;
+    printf("%d\n", i);
+    return 0;
+}
+
+output : 0
+-----------------------------------------------------------------------------------------------------------------
+-> perform
+int i = 1, j = 2, k = 3;
+int m = i-- - j-- - k--;
+printf("i=%d\n", i);
+printf("j=%d\n", j);
+printf("k=%d\n", k);
+printf("m=%d\n", m);
+
+#include <stdio.h>
+int main() {
+    int i = 1, j = 2, k = 3;
+    int m = i-- - j-- - k--;
+    printf("i=%d\n", i);
+    printf("j=%d\n", j);
+    printf("k=%d\n", k);
+    printf("m=%d\n", m);
+    return 0;
+}
+
+output : 
+i=0
+j=1
+k=2
+m=-4
+------------------------------------------------------------------------------------------------------------------
+->perform
+int a = 1, b = 2;
+printf("%d", --b - ++a + ++b - --a);
+
+#include <stdio.h>
+int main() {
+    int a = 1, b = 2;
+    printf("%d", --b - ++a + ++b - --a);
+    return 0;
+}
+
+output : 0
+-----------------------------------------------------------------------------------------------------------------
+-> perform
+int i=19, j=29, k;
+k = i-- - i++ + --j - ++j + --i - j-- + ++i - j++;
+printf("i=%d\n", i);
+printf("j=%d\n", j);
+printf("k=%d\n", k);
+
+
+#include <stdio.h>
+int main() {
+    int i=19, j=29, k;
+    k = i-- - i++ + --j - ++j + --i - j-- + ++i - j++;
+    printf("i=%d\n", i);
+    printf("j=%d\n", j);
+    printf("k=%d\n", k);
+    return 0;
+}
+
+output : 
+i=19
+j=29
+k=-20
+---------------------------------------------------------------------------------------------------------------------
+-> perform
+int i = 11;
+int j = --(i++);
+
+#include <stdio.h>
+int main() {
+    int i = 11;
+    int j = --(i++);
+    return 0;
+}
+
+output :
+this is show error
+------------------------------------------------------------------------------------------------------------------------
+-> perform
+Guess the value of p
+int m = 0, n = 0;
+int p = --m * --n * n-- * m--;
+printf("%i",p);
+
+#include <stdio.h>
+int main() {
+    int m = 0, n = 0;
+    int p = --m * --n * n-- * m--;
+    printf("%i",p);
+    return 0;
+}
+output : 1
+------------------------------------------------------------------------------------------------------------------------------
+-> perform
+int a=1;
+a = a++ + ++a * --a - a--;
+printf("%i",a);
+
+#include<stdio.h>
+int main(){
+    int a=1;
+    a = a++ + ++a * --a - a--;
+    printf("%i",a);
+    return 0;
+}
+
+output : 3
+--------------------------------------------------------------------------------------------------------------------------
+-> perform
+what will be the expected output of this program
+int a = 11++;
+printf("%i",a);
+
+output: this is show error because increment operator work only on variable not on value.
+----------------------------------------------------------------------------------------------------------------------------
+-> perform
+ int ch = 'A';
+printf("%i",ch);
+
+#include<stdio.h>
+int main(){
+    int ch = 'A';
+    printf("%i",ch);
+    return 0;
+}
+
+output : 65
+-------------------------------------------------------------------------------------------------------------------------
+-> perform
+char c = 'A', C = 'a';
+printf("%d\n", c++ * ++C);
+
+#include<stdio.h>
+int main(){
+    char c = 'A', C = 'a';
+    printf("%d\n", c++ * ++C);
+    return 0;
+}
+
+output : 6370
