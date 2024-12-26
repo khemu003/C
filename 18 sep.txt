@@ -1,0 +1,61 @@
+-> write a c program input a number and check number is greater than 10 or not ?
+
+#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    if (number>10){
+        printf("number is greater than 10.");
+    } else {
+        printf("number is not greater than 10.")
+    }
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+-> write a program input a number and check number is greater than 50 or not ?
+
+#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    if (number>50){
+        printf("number is greater than 50.");
+    } else {
+        printf("number is not greater than 50.")
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------
+-> write a program input a number and check number is less than 10 or not ?
+
+#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    if (number<10){
+        printf("number is less than 10.");
+    } else {
+        printf("number is not less than 10.")
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------
+-> write a c program input a number and check number is less than 67 or not ? 
+
+#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    if (number<67){
+        printf("number is less than 67.");
+    } else {
+        printf("number is not less than 67.")
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------
