@@ -1,0 +1,80 @@
+-> swap number without third variable 
+
+#include<stdio.h>
+int main(){
+    int a = 25;
+    int b = 45;
+    printf("a and b before swap : \n");
+    printf("a = %d\nb = %d\n",a,b);
+    a = a+b;
+    b = a-b;
+    a = a-b;
+    printf("a and b after swap : \n");
+    printf("a = %d\nb = %d",a,b);
+    return 0;
+}
+
+output :
+a and b before swap : 
+a = 25
+b = 45
+a and b after swap : 
+a = 45
+b = 25
+
+
+-> swap number with third variable 
+
+#include<stdio.h>
+int main(){
+    int a = 25;
+    int b = 45;
+    printf("a and b before swap : \n");
+    printf("a = %d\nb = %d\n",a,b);
+    int c;
+    c = a;
+    a = b;
+    b = c;
+    printf("a and b after swap : \n");
+    printf("a = %d\nb = %d",a,b);
+    return 0;
+}
+
+output :
+a and b before swap : 
+a = 25
+b = 45
+a and b after swap : 
+a = 45
+b = 25
+
+-> user input code for int, float, and char
+
+#include<stdio.h>
+int main(){
+    int a;
+    float b;
+    char ch;
+    // for integer input
+    printf("Give me a integer : ");
+    scanf("%d", &a);
+    // for floating input
+    printf("Give me a float : ");
+    scanf("%f", &b);
+    // for character input
+    printf("Give me a character : ");
+    scanf(" %c", &ch);
+    
+    printf("integer : %d\n",a);
+    printf("float : %f\n",b);
+    printf("character : %c\n",ch);
+    return 0;
+}
+
+output : 
+Give me a integer : 4
+Give me a float : 5.4
+Give me a character : k
+integer : 4
+float : 5.400000
+character : k
