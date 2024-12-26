@@ -1,0 +1,329 @@
+1)write a c program input number and check number is greater than 10 or not
+
+#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    if (number>10){
+        printf("number is greater than 10.");
+    } else {
+        printf("number is not greater than 10.");
+    }
+}
+
+---------------------------------------------------------------------------------------------------------- 
+2)write a c program input number and check number is greater than 50 or not 
+
+#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    if (number>50){
+        printf("number is greater than 50.");
+    } else {
+        printf("number is not greater than 50.");
+    }
+}
+
+----------------------------------------------------------------------------------------------------------
+3)voter id 
+	user input age check user is valid for vote or not 
+	age is greater than 18 
+
+#include<stdio.h>
+int main(){
+    int age;
+    printf("Enter a age : ");
+    scanf("%d",&age);
+    if (age>=18){
+        printf("user is valid for vote");
+    } else {
+        printf("user is not valid for vote");
+    }
+}
+
+----------------------------------------------------------------------------------------------------------
+4)write a c program input number and check number is even or odd ?
+
+#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    if (number%2==0){
+        printf("number is even.");
+    } else {
+        printf("number is odd.");
+    }
+}
+
+----------------------------------------------------------------------------------------------------------
+5)write a c program input number and check number is divisible by 7 or not ?
+
+#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    if (number%7==0){
+        printf("number is divisible by 7");
+    } else {
+        printf("number is not divisible by 7");
+    }
+}
+
+----------------------------------------------------------------------------------------------------------
+6)write a c program input any single character :
+	a :apple 
+	otherwise :input is not matched 
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("Enter a character : ");
+    scanf("%c",&ch);
+    if (ch=='a'){
+        printf("apple");
+    } else {
+        printf("input is not matched.");
+    }
+}
+
+----------------------------------------------------------------------------------------------------------
+7)write a c program input any single character :
+	b :ball 
+	otherwise :input is not matched 
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("Enter a character : ");
+    scanf("%c",&ch);
+    if (ch=='b'){
+        printf("ball");
+    } else {
+        printf("input is not matched.");
+    }
+}
+
+----------------------------------------------------------------------------------------------------------
+8)write a program input any single character and check a character is vowel and consonant 
+
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("enter a single character : ");
+    scanf("%c",&ch);
+    if (ch=='a'|| ch=='e'|| ch=='i'|| ch=='o'|| ch=='u'|| ch=='A'|| ch=='e'|| ch=='I'|| ch=='O'|| ch=='U'){
+        printf("%c is vowel.",ch);
+    } else {
+        printf("%c is consonant.",ch);
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+9)write a c program input any single character 
+	q,w,e,r,t,y,u,i,o,p :upper line 
+	otherwise input is not matched 
+
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("enter a single character : ");
+    scanf("%c",&ch);
+    if (ch=='q'|| ch=='w'|| ch=='e'|| ch=='r'|| ch=='t'|| ch=='y'|| ch=='u'|| ch=='i'|| ch=='o'|| ch=='p'){
+        printf("upper line");
+    } else {
+        printf("input is not matched");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+10)write a c program input single character :
+	a :
+		two number input 
+		addition 
+	input is not match 
+
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("enter a single character : ");
+    scanf("%c",&ch);
+    if (ch=='a'){
+        int num1,num2;
+        printf("enter num1 : ");
+        scanf("%d\n",&num1);
+	printf("enter num2 : ");
+        scanf("%d",&num2);
+        printf("addition of %d and %d is : %d",num1,num2,num1+num2);
+    } else {
+        printf("input is not matched");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+11) write a c program input single character :
+	s :
+		two number input 
+		substraction 
+	input is not match 
+
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("enter a single character : ");
+    scanf("%c",&ch);
+    if (ch=='s'){
+        int num1,num2;
+        printf("enter num1 : ");
+        scanf("%d\n",&num1);
+	printf("enter num2 : ");
+        scanf("%d",&num2);
+        printf("substraction of %d and %d is : %d",num1,num2,num1-num2);
+    } else {
+        printf("input is not matched");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+12) write a c program input single character :
+	m :
+		two number input 
+		multiplication 
+	input is not match 
+
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("enter a single character : ");
+    scanf("%c",&ch);
+    if (ch=='m'){
+        int num1,num2;
+        printf("enter num1 : ");
+        scanf("%d\n",&num1);
+	printf("enter num2 : ");
+        scanf("%d",&num2);
+        printf("multiplication of %d and %d is : %d",num1,num2,num1*num2);
+    } else {
+        printf("input is not matched");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+13) write a c program input single character :
+	s :
+		two number input 
+		swap without third variable 
+	input is not match 
+
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("enter a single character : ");
+    scanf("%c",&ch);
+    if (ch=='a'){
+        int num1,num2;
+        printf("enter num1 : ");
+        scanf("%d",&num1);
+	printf("enter num2 : ");
+        scanf("%d",&num2);
+        num1=num1+num2;
+        num2=num1-num2;
+        num1=num1-num2;
+        printf("num1 is %d and num2 is %d",num1,num2);
+    } else {
+        printf("input is not matched");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+14) write a c program input single character :
+	w :
+		two number input 
+		swap with third variable 
+	input is not match 
+
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("enter a single character : ");
+    scanf("%c",&ch);
+    if (ch=='a'){
+        int num1,num2,num3;
+        printf("enter num1 : ");
+        scanf("%d",&num1);
+	printf("enter num2 : ");
+        scanf("%d",&num2);
+        num3=num1;
+        num1=num2;
+        num2=num3;
+        printf("num1 is %d and num2 is %d",num1,num2);
+    } else {
+        printf("input is not matched");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+15) write a c program input any number 
+	1 ya 2 ya 3 ya 34 ya 89 
+		valid 
+	input is not valid 
+
+#include <stdio.h>
+int main() {
+    int num;
+    printf("enter a number : ");
+    scanf("%d",&num);
+    if (num==1 || num==2 || num==3 || num==34|| num==89){
+        printf("valid");
+    } else {
+        printf("input is not matched");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+16) write a c program input number between 1 to 5 : 
+	this number is between 1 to 5 
+	input is not valid 
+#include <stdio.h>
+int main() {
+    int num;
+    printf("enter a number : ");
+    scanf("%d",&num);
+    if (num >= 1 && num <= 5){
+        printf("this number is betweem 1 to 5");
+    } else {
+        printf("input is not valid");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+17)
+write a c program input number between 6 to 10: 
+	this number is between 6 to 10  
+	input is not valid 
+
+#include <stdio.h>
+int main() {
+    int num;
+    printf("enter a number : ");
+    scanf("%d",&num);
+    if (num >= 6 && num <= 10){
+        printf("this number is betweem 6 to 10");
+    } else {
+        printf("input is not valid");
+    }
+    return 0;
+}
