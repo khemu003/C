@@ -1,0 +1,211 @@
+#include<stdio.h>
+int main(){
+    printf("'e' : even & odd\n");
+    printf("'v' : vote\n");
+    printf("'m' : marksheet\n");
+    printf("'c' : calender\n");
+    printf("'o' : month\n");
+    printf("'l' : calculator\n");
+    printf("'k' : keyboard\n");
+    printf("'t' : temperature\n");
+    printf("'y' : vowel and consoant\n");
+    char c;
+    printf("Enter a character : ");
+    scanf("%c",&c);
+    
+    if (c=='e'){
+        int num;
+        printf("Enter a number : ");
+        scanf("%d",&num);
+        if (num%2==0){
+            printf("number is even.");
+        }
+        else{
+            printf("number is odd.");
+        }
+    }
+    else if (c=='v'){
+        int age;
+        printf("Enter your age : ");
+        scanf("%d",&age);
+        if (age>=18){
+            printf("person is eligable for vote.");
+        }
+        else{
+            printf("person is not eligable for vote.");
+        }
+    }
+    else if (c=='m'){
+        printf("name : khemraj mangal\n");
+        int subject1, subject2, subject3, subject4, subject5;
+        printf("Enter subject1 marks: ");
+        scanf("%d",&subject1);
+        printf("Enter subject2 marks: ");
+        scanf("%d",&subject2);
+        printf("Enter subject3 marks: ");
+        scanf("%d",&subject3);
+        printf("Enter subject4 marks: ");
+        scanf("%d",&subject4);
+        printf("Enter subject5 makrs : ");
+        scanf("%d",&subject5);
+        int total = subject1 + subject2 + subject3 + subject4 + subject5;
+        int per = total/5;
+
+        if (per<=100 && per>=90){
+            printf("A");
+        }
+        else if (per<=89 && per>=80){
+            printf("B");
+        }
+        else if (per<=79 && per>=70){
+            printf("C");
+        }
+        else if (per<=69 && per>=60){
+            printf("D");
+        }
+        else if (per>60){
+            printf("F");
+        }
+    }
+    else if (c=='c'){
+         int month;
+         printf("Enter any month in number : ");
+         scanf("%d",&month);
+         if (month==1){
+             printf("January ");
+         }
+         else if (month==2){
+             printf("February ");
+         }
+         else if (month==3){
+             printf("March ");
+         }
+         else if (month==4){
+             printf("April  ");
+         }
+         else if (month==5){
+             printf("May ");
+         }
+         else if (month==6){
+             printf("June ");
+         }
+         else if (month==7){
+             printf("July ");
+         }
+         else if (month==8){
+             printf("August ");
+         }
+         else if (month==9){
+             printf("September");
+         }
+         else if (month==10){
+             printf("October ");
+         }
+         else if (month==11){
+             printf("November ");
+         }
+         else if (month==12){
+             printf("December  ");
+         }
+         else{
+             printf("input is not match!");
+         }
+    }
+    else if (c=='o'){
+        int n;
+        printf("Enter month number : ");
+        scanf("%d",&n);
+        
+        if (n==1 || n==3 || n==5 || n==7 || n==8 || n==10 || n==12){
+            printf("31 days in this month. ");
+        }
+        else if (n==4 || n==6 || n==9 || n==11){
+            printf("30 days in this month. ");
+        }
+        else if (n==2){
+            printf("28/29 days in this month.");
+        }
+        else{
+            printf("invaild month.");
+        }
+    }
+    else if (c=='l'){
+        int a,b;
+        printf("Enter value of a : ");
+        scanf("%d",&a);
+        printf("Enter value of b : ");
+        scanf("%d",&b);
+        char op;
+        printf("Enter a operater(+,-,*,/ : ");
+        scanf(" %c",&op);
+        if (op=='+'){
+            printf("Addition : %d",a+b);
+        }
+        else if (op=='-'){
+            printf("subtraction : %d",a-b);
+        }
+        else if (op=='*'){
+            printf("multiple : %d",a*b);
+        }
+        else if (op=='/'){
+            printf("division : %d",a/b);
+        }
+        else{
+            printf("input is not match.");
+        }
+    }
+    else if (c=='k'){
+        char key;
+        printf("Enter a keyboard character : ");
+        scanf(" %c",&key);
+        if (key=='q' || key=='w' || key=='e' || key=='r' || key=='t' || key=='y' || key=='u' || key=='i' || key=='o' || key=='p'){
+            printf("upper line.");
+        }
+        else if (key=='a' || key=='s' || key=='d' || key=='f' || key=='g' || key=='h' || key=='j' || key=='k' || key=='l'){
+            printf("middle line.");
+        }
+        else if (key=='z' || key=='x' || key=='c' || key=='v' || key=='b' || key=='n' || key=='m'){
+            printf("lower line.");
+        }
+    }
+    else if (c=='t'){
+        char temp;
+        printf("Enter a character(c & f) : ");
+        scanf(" %c",&temp);
+    
+        if (temp =='c'){
+            float celsius;
+            printf("Enter temprature : ");
+            scanf("%f",&celsius);
+        
+            float fahrenheit = (1.8*celsius)+32;
+            printf("Fahrenheit : %f",fahrenheit);
+        }
+        else if (temp=='f'){
+            float fahrenheit;
+            printf("Enter temprature : ");
+            scanf("%f",&fahrenheit);
+        
+            float celsius = (fahrenheit-32)*5/9;
+            printf("Celsius : %f",celsius);
+        }
+        else{
+            printf("input is not match.");
+        }
+    }
+    else if (c=='y'){
+        char ch;
+        printf("enter a single character : ");
+        scanf(" %c",&ch);
+        if (ch=='a'|| ch=='e'|| ch=='i'|| ch=='o'|| ch=='u'|| ch=='A'|| ch=='e'|| ch=='I'|| ch=='O'|| ch=='U'){
+            printf("vowel.");
+        } else {
+            printf("consonant.");
+        }
+    }
+    else{
+         printf("input is not match.");
+    }
+    
+    return 0;
+}
