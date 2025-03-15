@@ -1,0 +1,541 @@
+1)
+Check whether the triangle , square , reactanlge (area & volume)
+->input area /volume 
+area 
+traingle square rectangle 
+square 
+
+
+
+2)
+Write a C function that takes an integer as input and checks whether it is a palindrome or an Armstrong number. The function should not return any value. Implement the function and demonstrate its usage in the main function by taking input from the user and calling this function.
+
+#include<stdio.h>
+void Palindrome(int a);
+void Armstrong(int b);
+int main(){
+    int a,b;
+    printf("Enter the value of a and b : ");
+    scanf("%d %d",&a,&b);
+    Palindrome(a);
+    Armstrong(b);
+    return 0;
+}
+void Palindrome(int a){
+    int rem, sum=0;
+    int temp=a;
+    while(a>0){
+        rem = a%10;
+        sum = sum*10+rem;
+        a = a/10;
+    }
+    if(temp==sum){
+        printf("number is palindroem.\n");
+    }
+    else{
+        printf("number is not palindroem.\n");
+    }
+}
+void Armstrong(int b){
+    int rem, sum=0;
+    int temp=b;
+    while(b>0){
+        rem = b%10;
+        sum = sum+rem*rem*rem;
+        b = b/10;
+    }
+    if(temp==sum){
+        printf("number is Armstrong.\n");
+    }
+    else{
+        printf("number is not Armstrong.\n");
+    }
+}
+===================================================================================================================
+3)
+ calculate the factorial of a given number in C
+
+#include<stdio.h>
+int main(){
+    int num,fact=1;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    int i=1;
+    while(i<=num){
+        fact = fact*i;
+        i++;
+    }
+    printf("%d",fact);
+    
+    return 0;
+}
+===================================================================================================================
+4)
+write a C program  sum of digits ?
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    int rem, sum=0;
+    while(num>0){
+        rem = num%10;
+        sum = sum+rem;
+        num = num/10;
+    }
+    printf("Sum of digit : %d",sum);
+
+    return 0;
+}
+===================================================================================================================
+5)
+write a C program count of numbers  ?
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    int rem, sum=0;
+    int count;
+    while(num>0){
+        rem = num%10;
+        num = num/10;
+        count++;
+    }
+    printf("count of digit : %d",count);
+
+    return 0;
+}
+===================================================================================================================
+6)
+1 6 11 16 21
+2 7 12 17 22
+3 8 13 18 23
+4 9 14 19 24
+5 10 15 20 25
+
+#include<stdio.h>
+int main(){
+    int x;
+    for(int i=1;i<=5;i++){
+        x=i;
+        for(int j=1;j<=5;j++){
+            printf("%d ",x);
+            x = x+5;
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+===================================================================================================================
+7)
+*******
+*     *
+*******
+*     *
+*     *
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(i==1 || i==3 || j==1 || j==5){
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+===================================================================================================================
+8)
+Write a C program that takes three integer inputs from the user and finds the maximum among them ?
+
+#include<stdio.h>
+int main(){
+    int num1,num2,num3;
+    printf("Enter the value of num1, num2 and num3 : ");
+    scanf("%d %d %d",&num1,&num2,&num3);
+    if(num1>num2 && num1>num3){
+        printf("num1 is largest");
+    }
+    else if(num2>num1 && num2>num3){
+        printf("num2 is largest");
+    }
+    else{
+        printf("num3 is largest");
+    }
+    
+    return 0;
+}
+===================================================================================================================
+9)Write a C program that prompts the user to input a starting point and an ending point for a range of numbers. The program should then print all the even numbers within that range, inclusive of both the starting and ending points?
+
+#include<stdio.h>
+int main(){
+    int start,end;
+    printf("Enter the value of start : ");
+    scanf("%d",&start);
+    printf("Enter the value of end : ");
+    scanf("%d",&end);
+    int i=start;
+    while(i<=end){
+        if(i%2==0){
+            printf("%d\n",i);
+        }
+        i++;
+    }
+    
+    return 0;
+}
+===================================================================================================================
+10)C program that prompts the user to enter a number and then prints its multiplication table 2?
+
+#include<stdio.h>
+int main(){
+    int i=1;
+    while(i<=10){
+        printf("%d\n",i*2);
+        i++;
+    }
+    
+    return 0;
+} 
+===================================================================================================================
+11)
+write a c program to check a voter is valid for vote or not ? 
+
+#include<stdio.h>
+int main(){
+    int age;
+    printf("Enter a voter id :");
+    scanf("%d",&age);
+    if(age>=18){
+        printf("person is valid for vote.");
+    }
+    else{
+        printf("person is not valid for vote.");
+    }
+    
+    return 0;
+}
+===================================================================================================================
+12)
+make a c program a number is divisible by 5 and 8 any one ?
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a num :");
+    scanf("%d",&num);
+    if(num%5==0 || num%8==0){
+        printf("number is divisible by 5 or 8");
+    }
+    else{
+        printf("number is not divisible by 5 or 8");
+    }
+    
+    return 0;
+}
+===================================================================================================================
+13)
+make a c program to check a gender male and female ? 
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("Enter a character : ");
+    scanf("%c",&ch);
+    
+    if(ch=='f'){
+        printf("gender : Female");
+    }
+    else if(ch=='m'){
+        printf("gender : Male");
+    }
+    else{
+        printf("not vaild!");
+    }
+    
+    return 0;
+}
+===================================================================================================================
+14)
+make a c program to reverse a number ? 
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    int rem, sum=0;
+    while(num>0){
+        rem = num%10;
+        sum = sum*10+rem;
+        num = num/10;
+    }
+    printf("reverse number : %d",sum);
+
+    return 0;
+}
+===================================================================================================================
+15)
+1
+23
+345
+4567
+56789
+
+#include<stdio.h>
+int main(){
+    int x=1;
+    for(int i=1;i<=5;i++){
+        x=i;
+        for(int j=1;j<=i;j++){
+            printf("%d",x);
+            x++;
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+===================================================================================================================
+16)
+Write a program that takes an integer as input and prints the Fibonacci series up to that number.
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number: ");
+    scanf("%d",&num);
+    int n1=0,n2=1,next;
+    printf("%d %d ",n1,n2);
+    int i=3;
+    while(i<=num){
+        next = n1+n2;
+        n1=n2;
+        n2=next;
+        printf("%d ",next);
+        i++;
+    }
+
+    return 0;
+}
+===================================================================================================================
+17)
+Create a C program that swaps the values of two variables without using a temporary variable.
+
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("Enter the value of a : ");
+    scanf("%d",&a);
+    printf("Enter the value of b : ");
+    scanf("%d",&b);
+    a = a+b;
+    b = a-b;
+    a = a-b;
+    printf("a=%d\nb=%d",a,b);
+    return 0;
+}
+===================================================================================================================
+18)
+Write a C function to find the factorial of a given number :return and argument 
+
+#include<stdio.h>
+int fact(int num);
+int main(){
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    printf("fact : %d",fact(num));
+    
+    return 0;
+}
+int fact(int num){
+    int i=1,fact=1;
+    while(i<=num){
+        fact = fact*i;
+        i++;
+    }
+    return fact;
+}
+===================================================================================================================
+19)
+Create a program that calculates the sum of digits of a given integer.
+
+repeat Question number 4
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    int rem, sum=0;
+    while(num>0){
+        rem = num%10;
+        sum = sum+rem;
+        num = num/10;
+    }
+    printf("Sum of digit : %d",sum);
+
+    return 0;
+}
+===================================================================================================================
+20)
+Write a C program to check if a given number is an Armstrong number or not. An Armstrong number 
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    int rem, sum=0;
+    int temp=num;
+    while(num>0){
+        rem = num%10;
+        sum = sum+rem*rem*rem;
+        num = num/10;
+    }
+    if(temp==sum){
+        printf("number is Armstrong.\n");
+    }
+    else{
+        printf("number is not Armstrong.\n");
+    }
+    
+    return 0;
+}
+===================================================================================================================
+21)
+******
+    *
+   *
+  *
+ *
+******
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=6;i++){
+        for(int j=1;j<=6;j++){
+            if(i+j==6+1 || i==1 || i==6){
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+===================================================================================================================
+22)
+write a C program and check a number is  pallindrome or not ?
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    int rem, sum=0;
+    int temp=num;
+    while(num>0){
+        rem = num%10;
+        sum = sum*10+rem;
+        num = num/10;
+    }
+    if(temp==sum){
+        printf("number is palindroem.\n");
+    }
+    else{
+        printf("number is not palindroem.\n");
+    }
+
+
+    return 0;
+}
+===================================================================================================================
+23)
+write a C program in C to count the number of digits in a given input?
+
+repeat Question number 5
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    int rem, sum=0;
+    int count;
+    while(num>0){
+        rem = num%10;
+        num = num/10;
+        count++;
+    }
+    printf("count of digit : %d",count);
+
+    return 0;
+}
+
+===================================================================================================================
+24)
+write a C program to print the multiplication table for numbers 2 to 10?
+
+#include<stdio.h>
+int main(){
+    for(int num=2;num<=10;num++){
+        int i=1;
+        while(i<=10){
+            printf("%d ",i*num);
+            i++;
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+output :
+2 4 6 8 10 12 14 16 18 20 
+3 6 9 12 15 18 21 24 27 30 
+4 8 12 16 20 24 28 32 36 40 
+5 10 15 20 25 30 35 40 45 50 
+6 12 18 24 30 36 42 48 54 60 
+7 14 21 28 35 42 49 56 63 70 
+8 16 24 32 40 48 56 64 72 80 
+9 18 27 36 45 54 63 72 81 90 
+10 20 30 40 50 60 70 80 90 100
+===================================================================================================================
+25)
+C program that prompts the user to enter their gender, using 'M' for male and 'F' for female, and then checks and displays whether the user is male or female based on the input?
+
+repeat Question number 13
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("Enter a character : ");
+    scanf("%c",&ch);
+    
+    if(ch=='f'){
+        printf("gender : Female");
+    }
+    else if(ch=='m'){
+        printf("gender : Male");
+    }
+    else{
+        printf("not vaild!");
+    }
+    
+    return 0;
+}
+===================================================================================================================
