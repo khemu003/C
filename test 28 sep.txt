@@ -1,0 +1,226 @@
+1.Print Numbers from 1 to 5**
+   Write a C program that uses a `while` loop to print numbers from 1 to 5.
+Expected Output:
+   1 2 3 4 5
+
+#include<stdio.h>
+int main(){
+    int i=1;
+    while(i<=5){
+        printf("%d ",i);
+        i++;
+    }
+    
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------
+2.Sum of First 5 Natural Numbers
+   Write a C program that uses a `while` loop to calculate the sum of the first 5 natural numbers.
+
+Expected Output:
+   Sum = 15
+
+#include<stdio.h>
+int main(){
+    int i=1;
+    int sum=0;
+    while(i<=5){
+        sum = sum + i;
+        i++;
+    }
+    printf("%d",sum);
+    
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------
+3.Print Even Numbers between 1 and 10**
+   Write a C program that uses a `while` loop to print even numbers between 1 and 10.
+
+Expected Output:
+   2 4 6 8 10
+
+#include<stdio.h>
+int main(){
+    int i=1;
+    while(i<=10){
+        if(i%2==0){
+            printf("%d ",i);
+        }
+        i++;
+    }
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------
+4.Countdown from 5 to 1
+   Write a C program that uses a `while` loop to print a countdown from 5 to 1.
+Expected Output:
+   5 4 3 2 1
+
+#include<stdio.h>
+int main(){
+    int i=5;
+    while(i>=1){
+        printf("%d ",i);
+        i--;
+    }
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------
+5.Sum of Digits
+   Write a C program that uses a `while` loop to calculate the sum of the digits of a 2-digit number.
+
+Example Input:
+   Enter a 2-digit number: 23
+
+Expected Output:
+   Sum of digits = 5
+
+#include<stdio.h>
+int main(){
+    int num=238;
+    int rem, sum=0;
+    while(num>0){
+        rem = num%10;
+        sum = sum +rem;
+        num = num/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------
+6)
+Find the Largest of Three Numbers
+Write a C program that takes three numbers as input and uses nested if-else statements to determine the largest of the three numbers.
+
+#include<stdio.h>
+int main(){
+    int num1, num2, num3;
+    printf("Enter first number : ");
+    scanf("%d",&num1);
+    printf("Enter second number : ");
+    scanf("%d",&num2);
+    printf("Enter third number : ");
+    scanf("%d",&num3);
+    if(num1>num2){
+        if(num1>num3){
+            printf("num1 is largest.");
+        }
+    }
+    else if (num2>num3){
+        if(num2>num1){
+            printf("num2 is largest.");
+        }
+    }
+    else{
+        printf("num3 is largest.");
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------
+7)
+Grade Calculation Using Marks
+Write a C program that takes marks (0-100) from the user and uses if-else statements to determine the grade:
+90 and above: A
+80-89: B
+70-79: C
+60-69: D
+Below 60: F
+
+#include<stdio.h>
+int main(){
+    int subject1, subject2, subject3, subject4, subject5;
+    printf("Enter subject1 marks: ");
+    scanf("%d",&subject1);
+    printf("Enter subject2 marks: ");
+    scanf("%d",&subject2);
+    printf("Enter subject3 marks: ");
+    scanf("%d",&subject3);
+    printf("Enter subject4 marks: ");
+    scanf("%d",&subject4);
+    printf("Enter subject5 makrs : ");
+    scanf("%d",&subject5);
+    int total = subject1 + subject2 + subject3 + subject4 + subject5;
+    int per = total/5;
+
+    if (per<=100 && per>=90){
+        printf("A");
+    }
+    else if (per<=89 && per>=80){
+        printf("B");
+    }
+    else if (per<=79 && per>=70){
+        printf("C");
+    }
+    else if (per<=69 && per>=60){
+        printf("D");
+    }
+    else if (per>60){
+        printf("F");
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------
+8)
+Check Voting Eligibility
+Write a C program that takes a person's age as input and checks whether they are eligible to vote or not (the voting age is 18 or older).
+
+#include<stdio.h>
+int main(){
+    int age;
+    printf("Enter your age : ");
+    scanf("%d",&age);
+    
+    if (age>=18){
+        printf("person's is eligible to vote.");
+    }
+    else{
+        printf("person's is not eligible to vote.");
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------------
+9)
+Find the Smallest of Three Numbers
+Write a C program that takes three numbers as input and uses nested if-else statements to determine the smallest of the three numbers.
+
+#include<stdio.h>
+int main(){
+    int num1, num2, num3;
+    printf("Enter first number : ");
+    scanf("%d",&num1);
+    printf("Enter second number : ");
+    scanf("%d",&num2);
+    printf("Enter third number : ");
+    scanf("%d",&num3);
+    if(num1<num2){
+        if(num2<num3){
+            printf("num1 is smallest.");
+        }
+    }
+    else if (num2<num3){
+        if(num2<num1){
+            printf("num2 is smallest.");
+        }
+    }
+    else{
+        printf("num3 is smallest.");
+    }
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------
+10)
+print table 
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    int i=1;
+    while(i<=10){
+        printf("%d\n",i*num);
+        i++;
+    }
+    return 0;
+}
